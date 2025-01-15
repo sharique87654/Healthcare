@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AiMarketplace from "./components/multiPage/AiMarketplace";
 import Home from "./components/Pages/Home";
-import Error from "./components/multiPage/error";
+import Error from "./components/multiPage/Error";
 
 export default function App() {
   return (
