@@ -1,0 +1,58 @@
+/* Card styles */
+.e-card {
+    perspective: 800px;
+  }
+  
+  .wave {
+    position: absolute;
+    width: 540px;
+    height: 700px;
+    opacity: 0.6;
+    left: 0;
+    top: 0;
+    margin-left: -50%;
+    margin-top: -70%;
+    background: linear-gradient(700deg, #44b87c, #42eae7 60%, #1e5167);
+    border-radius: 40%;
+    animation: wave 55s infinite linear;
+  }
+  
+  .wave:nth-child(2),
+  .wave:nth-child(3) {
+    top: 210px;
+  }
+  
+  .wave:nth-child(2) {
+    animation-duration: 50s;
+  }
+  
+  .wave:nth-child(3) {
+    animation-duration: 45s;
+  }
+  
+  .playing .wave:nth-child(2) {
+    animation-duration: 4000ms;
+  }
+  
+  .playing .wave:nth-child(3) {
+    animation-duration: 5000ms;
+  }
+  
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Additional styling for the text */
+  .infotop {
+    font-size: 20px;
+  }
+  
+  .name {
+    font-size: 14px;
+  }
+  

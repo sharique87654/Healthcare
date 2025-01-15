@@ -1,0 +1,41 @@
+/* Loader Animations */
+@keyframes rotate1 {
+    0% {
+      transform: rotateX(45deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(45deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate2 {
+    0% {
+      transform: rotateX(45deg) rotateY(45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(45deg) rotateY(45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate3 {
+    0% {
+      transform: rotateX(-60deg) rotateY(0deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(-60deg) rotateY(0deg) rotateZ(360deg);
+    }
+  }
+  
+  /* Apply Animations */
+  .load-inner.load-one {
+    animation: rotate1 1.15s linear infinite;
+  }
+  
+  .load-inner.load-two {
+    animation: rotate2 1.15s 0.1s linear infinite;
+  }
+  
+  .load-inner.load-three {
+    animation: rotate3 1.15s 0.15s linear infinite;
+  }
+  
